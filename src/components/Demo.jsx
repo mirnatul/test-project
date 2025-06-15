@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Demo.css'
 
 const demoStyle = {
@@ -6,12 +6,14 @@ const demoStyle = {
 }
 
 const Demo = () => {
+    const [visited, setVisited] = useState(true)
+
     return (
-        <div className='container'>
+        <div className={`${visited && 'container'}`}>
             Hello there, this is Demo
             <p style={demoStyle}>Hello there this is blue</p>
             {/* or */}
-            <p style={{ color: 'blue' }}>Hello there this is blue</p>
+            <p style={{ color: visited ? 'blue' : 'green' }}>Hello there this is blue</p>
         </div>
     );
 };
