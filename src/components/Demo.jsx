@@ -5,8 +5,11 @@ const demoStyle = {
     color: 'blue'
 }
 
-const Demo = () => {
+const Demo = ({ name = 'N/A', job }) => { // We set N/A as default value
+    console.log(job);
     const [visited, setVisited] = useState(true)
+    // console.log(props); // it holds all the props as key
+    // {name: 'Lipon', job: 'Developer'}
 
     return (
         <div className={`${visited && 'container'}`}>
