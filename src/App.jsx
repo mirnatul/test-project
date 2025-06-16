@@ -2,6 +2,7 @@ import Counter from "./components/Counter/Counter";
 import Demo from "./components/Demo"
 import Ehandler from "./components/Ehandler/Ehandler";
 import Person from './components/Person/Person';
+import TestUseEffect from "./components/TestUseEffect/TestUseEffect";
 import User from "./components/User/User";
 
 function App() {
@@ -17,8 +18,9 @@ function App() {
       {/* {
         users.map(user => <User key={user.id} user={user}></User>)
       } */}
-      <Ehandler></Ehandler>
-      <Counter></Counter>
+      {/* <Ehandler></Ehandler> */}
+      {/* <Counter></Counter> */}
+      <TestUseEffect></TestUseEffect>
     </>
   )
 }
