@@ -1,4 +1,6 @@
+import Counter from "./components/Counter/Counter";
 import Demo from "./components/Demo"
+import Ehandler from "./components/Ehandler/Ehandler";
 import Person from './components/Person/Person';
 import User from "./components/User/User";
 
@@ -12,9 +14,11 @@ function App() {
     <>
       {/* <Demo name="Lipon" job="Developer"></Demo> */}
       {/* <Person person={{ name: 'Lipon', job: 'Developer' }}></Person > */}
-      {
+      {/* {
         users.map(user => <User key={user.id} user={user}></User>)
-      }
+      } */}
+      <Ehandler></Ehandler>
+      <Counter></Counter>
     </>
   )
 }
