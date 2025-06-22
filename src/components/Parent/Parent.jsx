@@ -24,6 +24,11 @@ const Parent = () => {
             <div className='mb-4 sticky top-0 bg-red-200'>
                 <p>Total country: <b>{country.length}</b></p>
                 <p>Visited: <b>{visited.length}</b></p>
+                <div>
+                    {
+                        visited.map(con => <p key={con?.cca2}>{con.name.common}</p>)
+                    }
+                </div>
             </div>
             <div className='grid grid-cols-3 gap-2'>
                 {
